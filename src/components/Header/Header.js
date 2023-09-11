@@ -6,6 +6,8 @@ import Cart from "../CartCard/Cart"
 
 const Header = (props) => {
     return (
+
+        
         <nav>
             <header className={Styles.header}>
                 <h1>ReactMeals</h1>
