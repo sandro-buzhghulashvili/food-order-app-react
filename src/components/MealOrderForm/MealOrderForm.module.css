@@ -1,0 +1,46 @@
+.form {
+    border: 2px solid #8a2b06;
+    border-radius: 5px;
+    padding: 20px;
+}
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-bottom: 20px;
+}
+.form-control label {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.form-control input {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #8a2b06;
+    border-radius: 10px;
+}
+
+.form-control .invalid {
+    border: 2px solid red ;
+}
+.form-control .invalid:focus {
+    border: 2px solid red;
+    outline: none;
+}
+.error {
+    margin-top: 10px;
+    color: darkred;
+}
+.submit {
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
+    background-color: #8a2b06;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+.submit:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

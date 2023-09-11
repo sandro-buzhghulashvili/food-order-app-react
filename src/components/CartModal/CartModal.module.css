@@ -1,0 +1,78 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .modal {
+    overflow: auto;
+    max-height: 600px;
+    position: absolute;
+    top: 10vh;
+    left: 5%;
+    width: 90%;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
+  }
+  .modal ul {
+    max-height: 360px;
+    overflow: auto;
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+  .btn-group {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+  }
+  .btn-group button {
+    margin: 10px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
+    background-color: #8a2b06;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+  }
+  .btn-group button:nth-of-type(1) {
+    background-color: #fff;
+    color: #8a2b06;
+    border: 2px solid #8a2b06;
+  }
+  .flash {
+    margin-bottom: 20px;
+  }
+
+  .btn-group button:disabled {
+    cursor: not-allowed;
+  }
+
+  @media (min-width: 768px) {
+    .modal {
+      width: 40rem;
+      left: calc(50% - 20rem);
+    }
+  }
+  
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,11 @@
+.list {
+    width: 70%;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+}
+.notification {
+    font-size: 1.4rem;
+    margin: auto;
+}

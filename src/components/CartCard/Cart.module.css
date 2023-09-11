@@ -1,0 +1,38 @@
+.cart {
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: #6a040f;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.cart p {
+    font-size: 18px;
+    margin-left: 10px;
+}
+.amount {
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    background-color:#d00000;
+    margin-left: 15px;
+}
+.amount p {
+    font-size: 16px;
+    margin: 0;
+}
+.bump {
+    animation: bumpAnimation .5s ease;
+}
+
+@keyframes bumpAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
