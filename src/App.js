@@ -87,6 +87,7 @@ const App = () => {
         <CartContext.Provider value={{removeFromCart : removeFromCartById,addToCart : addToCartById, resetCart: clearCart}}>
         <Header cartItems={cart} />
         </CartContext.Provider>    
+        <h1>Added content</h1>
         <MealsSummary />
         <FoodList onAddItem={addItem} />
         </React.Fragment>
